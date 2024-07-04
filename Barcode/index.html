@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EANs to SVG</title>
+  <style>        
+  .center, .overlay img {
+    text-align: center;
+    margin: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95%;
+    max-width: 100vw;
+    object-fit: contain;
+    display: block;
+  }
+  </style>
+</head>
+<body>
+  <h1 class="center">EAN to SVG</h1>
+  
+  <input class="center" type="text" id="eanInput" placeholder="Copy your EANs">
+  <button class="center" onclick="convertAndDownload()">Download your SVGs</button>
+  <script src="script.js"></script>
+</body>
+</html>
