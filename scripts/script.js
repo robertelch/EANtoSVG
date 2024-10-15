@@ -65,8 +65,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
     width="113.39pt" height="40.27pt">
     <defs>
-    <mask id="cutout-mask">
-    <rect width="100%" height="100%" style="fill:white" />`;
+    <mask id="cutout-mask">`;
 
   
     let currentStreakStart = null;
