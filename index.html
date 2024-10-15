@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EANs to SVG</title>
+  <style>        
+  .center, .overlay img {
+    text-align: center;
+    margin: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 95%;
+    max-width: 100vw;
+    object-fit: contain;
+    display: block;
+  }
+  textarea {
+    resize: none;
+    min-height: 30vh;
+  }
+  /* From Uiverse.io by Voxybuns */ 
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+  </style>
+</head>
+<body>
+  <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: xxx-large;" class="center">EAN to SVG</h1>
+  <textarea class="center" type="text" id="eanInput" placeholder="Copy your EANs"></textarea>
+  <button class="center" onclick="convertAndDownload()">
+    <span class="button_top">Download SVGs</span>
+  </button>
+  <script src="scripts/script.js"></script>
+
+
+</body></html>
