@@ -89,7 +89,7 @@
       }
     }
     xmlString += "</mask></defs>"
-    xmlString +=  '<rect width="100%" height="100%" style="fill:white" mask="url(#cutout-mask)" />'
+    xmlString +=  '<rect width="100%" height="100%" style="fill:black" mask="url(#cutout-mask)" />'
     xmlString += `<text y="-8pt">${EAN}</text>
   </svg>`;
   
